@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family:  Courier New;
+}
+
+/* Start of gallery */ 
+
+div.gallery {
+  margin: 5px;
+  border: 1px solid #ccc;
+  float: left;
+  width: 280px;
+}
+
+div.gallery:hover {
+  border: 1px solid #777;
+}
+
+div.gallery img {
+  width: 100%;
+  height: auto;
+}
+
+div.desc {
+  padding: 15px;
+  text-align: center;
+}
+/* end of gallery */
+
+/* Style the header */
+header {
+  background-color: #666;
+  padding: 1px;
+  text-align: center;
+  font-size: 40px;
+  color: white;
+}
+
+/* nav bar starts here */
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: #aaa;
+  position: -webkit-sticky; /* Safari */
+  position: sticky;
+  top: 0;
+
+}
+
+li {
+  float: left;
+}
+
+li a {
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+li a:hover {
+  background-color: #111;
+}
+
+.active {
+  background-color: #aaa;
+}
+/* nav bar ends here */
+
+/* Clear floats after the columns */
+section:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+article {
+  float: left;
+  padding: 20px;
+  width: 70%;
+  background-color: white;
+  height: 600px; /* only for demonstration, should be removed */
+
+}
+</style>
+</head>
+<body>
+<section>
+
+<header>
+  <h2>sug·ar</h2>
+  
+</header>
+
+<ul>
+  <li><a class="active" href="website.html">Home</a></li>
+  <li><a href="aboutus.html">About Us</a></li>
+  <li><a href="contact.html">Contact Us</a></li>
+</ul>
+
+   
+
+  <article>
+    <h1>How it all started!</h1>
+    
+    <p>Lava Ghimire was originally from Kathmandu, Nepal. She was "hired" as an assiatant cook for her dad during sundays at home. This is where her passion grew. In the kitcehn of her home, 
+    it only took a few years for her to advance to making food on her own and then, in 2007, was promoted to become Chef of Sunday Breakfast in the Ghimire Estate.  
+    In 2015, Ghimire's sister Bala Ghimire became Vegan.  There was a problem. Ghimire didnt know how to make anything vegan.</p>
+    <p>Therefore, Ghimire started experimenting with diffrent ingredients. The result was sug·ar is a bakery that focuses on people with gluten, dairy, 
+    egg, and soy sensitivities.For those who are the health-minded, but most importantly, those with allergies, who are often unable to indulge.  </p>
+  </article>
+  
+  <div class="gallery">
+    <img src="myAvatar.jpg" width="600" height="400">
+  <div class="desc">Lava Ghimire, Founder & CEO of sug·ar</div>
+</div>
+
+
+</section>
+
+
+
+</body>
+</html>

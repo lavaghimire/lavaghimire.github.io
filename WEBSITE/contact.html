@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family:  Courier New;
+}
+
+/*input*/
+}
+
+input[type=text], select, textarea {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  resize: vertical;
+}
+
+label {
+  padding: 12px 12px 12px 0;
+  display: inline-block;
+}
+
+input[type=submit] {
+  background-color: #4CAF50;
+  color: white;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  float: right;
+}
+
+input[type=submit]:hover {
+  background-color: #45a049;
+}
+
+.container {
+  border-radius: 5px;
+  background-color:  #FFFFFF;
+  padding: 20px;
+}
+
+.col-25 {
+  float: left;
+  width: 25%;
+  margin-top: 6px;
+}
+
+.col-75 {
+  float: left;
+  width: 75%;
+  margin-top: 6px;
+}
+
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Responsive layout - when the screen is less than 600px wide, make the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 600px) {
+  .col-25, .col-75, input[type=submit] {
+    width: 100%;
+    margin-top: 0;
+  }
+}
+
+/*input*/
+
+/* Style the header */
+header {
+  background-color: #666;
+  padding: 1px;
+  text-align: center;
+  font-size: 40px;
+  color: white;
+}
+
+/* nav bar starts here */
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: #aaa;
+  position: -webkit-sticky; /* Safari */
+  position: sticky;
+  top: 0;
+
+}
+
+li {
+  float: left;
+}
+
+li a {
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+li a:hover {
+  background-color: #111;
+}
+
+.active {
+  background-color: #aaa;
+}
+/* nav bar ends here */
+
+/* Clear floats after the columns */
+section:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+article {
+  float: left;
+  padding: 20px;
+  width: 70%;
+  background-color: white;
+  height: 600px; /* only for demonstration, should be removed */
+
+}
+</style>
+</head>
+<body>
+<section>
+
+<header>
+  <h2>sug·ar</h2>
+  
+</header>
+
+<ul>
+  <li><a class="active" href="website.html">Home</a></li>
+  <li><a href="aboutus.html">About Us</a></li>
+  <li><a href="contact.html">Contact Us</a></li>
+</ul>
+
+   
+
+  <article>
+    <h1>Locations</h1>
+    <p>8565 Melrose Ave, West Hollywood, CA 90069</p>
+    <p>267 S Beverly Dr, Beverly Hills, CA 90212</p>
+    <p>1 Mission St, San Francisco, CA 94105</p>
+    <p>21 9th Ave, New York, NY 10014</p>
+    
+    <h2>Hours</h2>
+    <p>CLOSED MONDAYS</p>
+    <p>TUESDAY
+7AM to 10PM</p>
+    <p>WEDNESDAY
+7AM to 10PM</p>
+    <p>THRUSDAY
+7AM to 10PM</p>
+    <p>FRIDAY
+7AM to 12PM</p>
+    <p>SATURDAY
+7AM to 12PM</p>
+    <p>SUNDAY
+7AM to 10PM</p>
+
+<h2>Write To Us</h2>
+  <div class="container">
+  <form action="/action_page.php">
+  <div class="row">
+    <div class="col-25">
+      <label for="fname">First Name</label>
+    </div>
+    <div class="col-75">
+      <input type="text" id="fname" name="firstname" placeholder="Your name..">
+    </div>
+  </div>
+  <div class="row">
+    <div class="col-25">
+      <label for="lname">Last Name</label>
+    </div>
+    <div class="col-75">
+      <input type="text" id="lname" name="lastname" placeholder="Your last name..">
+    </div>
+  </div>
+  <div class="row">
+    <div class="col-25">
+      <label for="country">Country</label>
+    </div>
+    <div class="col-75">
+      <select id="country" name="country">
+        <option value="australia">Australia</option>
+        <option value="canada">Canada</option>
+        <option value="usa">USA</option>
+      </select>
+    </div>
+  </div>
+  <div class="row">
+    <div class="col-25">
+      <label for="subject">Subject</label>
+    </div>
+    <div class="col-75">
+      <textarea id="subject" name="subject" placeholder="Write something.." style="height:200px"></textarea>
+    </div>
+  </div>
+  <div class="row">
+    <input type="submit" value="Submit">
+  </div>
+  </form>
+</div>
+
+    
+  </article>
+  
+  
+
+  
+
+</section>
+
+
+
+</body>
+</html>
